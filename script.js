@@ -4,6 +4,28 @@
 // EN index.html justo arriba de la línea <script src="script.js"></script>
 // (ver más abajo el fragmento exacto de HTML a pegar).
 
+// 1. Importa las funciones que necesitas desde el CDN o tus módulos de npm
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-app.js";
+// (O si usas npm localmente, import from "firebase/app")
+
+// 2. Copia y pega exactamente el objeto que tienes en pantalla
+const firebaseConfig = {
+  apiKey: "AIzaSyCJiTtVq5IIu6ucWC-_4jufmUtmaeIdV8Y",
+  authDomain: "wolfy-weapon-battles.firebaseapp.com",
+  projectId: "wolfy-weapon-battles",
+  storageBucket: "wolfy-weapon-battles.firebasestorage.app",
+  messagingSenderId: "305506151175",
+  appId: "1:305506151175:web:f3b217ab0b9faee5c8b3a2",
+  measurementId: "G-Q5Q5SWH0E8"
+};
+
+// 3. ¡ESTO ES LO CLAVE! Inicializa Firebase ANTES de llamar a cualquier otra cosa
+const app = initializeApp(firebaseConfig);
+
+// A partir de aquí ya puedes llamar a tu base de datos o auth, por ejemplo:
+// import { getFirestore } from "firebase/firestore";
+// const db = getFirestore(app);
+
 /* -------------------------
    Utils / DOM
    ------------------------- */
