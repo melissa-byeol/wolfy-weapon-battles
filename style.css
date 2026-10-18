@@ -1,0 +1,58 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a2e; /* Azul oscuro noche */
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.screen {
+    display: none;
+    padding-top: 50px;
+}
+
+.screen.active {
+    display: block;
+}
+
+.hidden {
+    display: none !important;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px;
+    transition: transform 0.1s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background-color: #e94560; /* Rojo lobo */
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #0f3460; /* Azul profundo */
+    color: white;
+}
+
+#status-msg {
+    color: #ffd700;
+    margin-top: 20px;
+}
